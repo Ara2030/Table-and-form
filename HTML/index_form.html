@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Форма заявки на работу в зоопарк</h1>
+        <h3><i>Пожалуйста, заполните форму. Обязательные поля помечены <font color="red">*</font></i></h3>
+        <form method="POST" action="/feedback.php">
+            <fieldset style="width: 360px">
+
+
+                <legend><b>Контактная информация</b></legend>
+                <label>
+                    Имя<font color="red">*</font>
+                    <input style="margin-top: 10px;
+            margin-left: 51px;" type="text" name="firstname">
+                </label>
+                <br>
+                <label>
+                    Телефон
+                    <input style="margin-top: 10px;
+            margin-left: 33px;" type="tel" name="tel">
+                </label>
+                <br>
+                <label>
+                    Email <font color="red">*</font>
+                    <input style="margin-top: 10px;
+            margin-left: 43px;" type="email" name="email">
+                </label>
+            </fieldset>
+
+
+            <fieldset style="width: 360px">
+                <legend><b>Персональные данные</b></legend>
+                <label>
+                    Возраст<font color="red">*</font>
+                    <input style="margin-top: 10px;
+            margin-left: 23px;" type="number" name="firstname">
+                </label>
+                <br>
+                <label>
+                    Пол
+                    <select style="margin-top: 10px; 
+                    width: 180px;
+                    margin-left: 53px;" name="service_type">
+                        <option>Женщина</option>
+                        <option>Мужчина</option>
+                    </select>
+                </label>
+                <br>
+                <label style="display:inline-block;
+                vertical-align: top;
+                margin-top: 38px;">
+                    Перечислите<br>свои<br>качества
+                </label>
+                <textarea cols="22" rows="7" style="margin-top: 9px;"></textarea>
+            </fieldset>
+
+
+            <fieldset style="width: 360px">
+                <legend><b>Выберите ваших любимых животных</b></legend>
+                <table style="width: 104%;">
+                    <tr>
+                        <td><input type="checkbox" name="check[1]">Зебра</td>
+                        <td><input type="checkbox" name="check[1]">Кошак</td>
+                        <td><input type="checkbox" name="check[1]">Анаконда</td>
+                        <td><input type="checkbox" name="check[1]">Шимпонзе</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check[1]">Слон</td>
+                        <td><input type="checkbox" name="check[1]">Антилова</td>
+                        <td><input type="checkbox" name="check[1]">Голуб</td>
+                        <td><input type="checkbox" name="check[1]">Краб</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <button style="margin-top: 20px;">Отравить информацию</button>
+        </form>
+    </center>
+</body>
+
+</html>
